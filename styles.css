@@ -5,21 +5,35 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+/* 1. Styles et fonts basiques */
+
+body {
+  position: relative;
   font-family: Arial, sans-serif;
-  background-color: #dff2f2;
   color: #333;
+  background-color: #dff2f2;
   line-height: 1.6;
   padding: 20px;
 }
 
-/* 1. Styles et fonts basiques */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("media/background_img1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* 2. Styles des titres */
@@ -74,7 +88,7 @@ a:hover {
   font-size: 0.8em;
   text-align: center;
   box-shadow: 0 4px #d4a91b;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
