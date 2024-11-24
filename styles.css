@@ -13,12 +13,12 @@ body {
 /* 1. Styles et fonts basiques */
 
 body {
+  padding: 20px;
   position: relative;
   font-family: Arial, sans-serif;
   color: #333;
   background-color: #dff2f2;
   line-height: 1.6;
-  padding: 20px;
 }
 
 body::before {
@@ -160,6 +160,10 @@ footer {
   margin-bottom: 20px;
 }
 
+footer {
+  position: relative;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -179,6 +183,22 @@ aside {
 
 #footer-liens {
   text-align: left;
+  margin-bottom: 90px;
+}
+
+/* 7.1 manu de navigation collé de page presentation.html */
+
+#presentation-page #sticky-nav {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  background-color: #e6e6e6;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* 8 Table des matieres */
